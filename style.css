@@ -25,11 +25,53 @@
   cursor: pointer;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, .2 );
   display: inline;
+  transition: all linear 0.4s;
 }
+.btn-mycustom:hover{
+  background: #fff;
+  color: #1DD100;
+  border: 1px solid #1DD100;
+}
+
 .discount-coupon input{
   width: 100%;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   outline: none;
+}
+form{
+  margin-top: 20px;
+}
+form label{
+  margin-top: 20px;
+  font-size: 20px;
+  display: block;
+}
+form input{
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+form .submit-btn{
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  background: #1DD100;
+  color: white;
+  cursor: pointer;
+  transition: all linear .4s;
+}
+form .submit-btn:hover{
+  background: #fff;
+  color: #1DD100;
+  border: 1px solid #1DD100;
 }
