@@ -69,6 +69,7 @@
           class="hero min-h-screen rounded-3xl overflow-hidden"
           style="background-image: url(images/banner.png)"
         >
+        <!-- Banner part start -->
           <div class="hero-overlay bg-opacity-10"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -96,29 +97,35 @@
         <div class="mx-auto container flex justify-center my-5 gap-5">
           <div class="rect-pink rect-yellow p-3 lg:p-8 flex justify-between">
             <div>
-              <h3 class=" text-2xl lg:text-5xl font-bold">15% OFF</h3>
-              <h4 class="text-xl mt-3">on your next purchase</h4>
-              <p class="text-xl mt-3">use by January 2024</p>
+              <h3 class="text-2xl lg:text-5xl font-bold">15% OFF</h3>
+              <h4 class="lg:text-2xl mt-3">on your next purchase</h4>
+              <p class="lg:text-xl mt-3">use by January 2024</p>
             </div>
+            <div class="w-1 h-full bg-yellow-300 lg:hidden mr-2"></div>
             <div class="hidden lg:block lg:-mt-8">
               <img src="images/cupon-devider.png" alt="" />
             </div>
             <div>
-              <h4 class=" text-xl lg:text-2xl mt-8 lg:mt-10 pr-6 font-bold">NEW15</h4>
+              <h4 class="text-xl lg:text-2xl mt-8 lg:mt-10 pr-6 font-bold">
+                NEW15
+              </h4>
               <p class="mt-3">Coupon Code</p>
             </div>
           </div>
           <div class="rect-pink p-3 lg:p-8 flex justify-between">
             <div>
               <h3 class="text-2xl lg:text-5xl font-bold">20% OFF</h3>
-              <h4 class="text-2xl mt-3">on your next purchase</h4>
-              <p class="text-xl mt-3">use by January 2024</p>
+              <h4 class="lg:text-2xl mt-3">on your next purchase</h4>
+              <p class="lg:text-xl mt-3">use by January 2024</p>
             </div>
             <div class="hidden lg:block -mt-8">
               <img src="images/cupon-devider.png" alt="" />
             </div>
+            <div class="w-1 h-full bg-pink-300 lg:hidden mr-2"></div>
             <div>
-              <h4 class="text-xl lg:text-2xl mt-8 lg:mt-10 pr-6 font-bold">Couple 20</h4>
+              <h4 class="text-xl lg:text-2xl mt-8 lg:mt-10 pr-6 font-bold">
+                Couple 20
+              </h4>
               <p class="mt-3">Coupon Code</p>
             </div>
           </div>
@@ -129,9 +136,64 @@
           </button>
         </div>
       </section>
-      <section class="mx-auto container">
-             <h2 class="text-3xl font-bold text-center m-5">Dur Paribahan</h2>
-             <p class="text-center m-5 px-8 lg:px-80">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      <!-- Greenline Paribahan section  -->
+      <section class="mx-auto container bg-[#F7F8F8] p-3 lg:p-12">
+        <h2 class="text-3xl font-bold text-center m-5">Dur Paribahan</h2>
+        <p class="text-center m-5 px-8 lg:px-80">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <!-- Greenline Paribahan Upper part-->
+        <div class="bg-white rounded-xl flex justify-between">
+          <div class="p-3 w-2/3">
+            <!-- first div -->
+            <div class="flex justify-between">
+              <div class="flex flex-col lg:flex-row gap-2">
+                <div><img src="images/bus-logo.png" alt="" /></div>
+                <div>
+                  <h3 class="lg:text-2xl font-bold">Greenline Paribahan</h3>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div class="bg-green-100 p-2 rounded-xl">
+                <ul class="flex flex-col lg:flex-row lg:gap-2 text-[#1DD100] lg:text-xl font-bold">
+                  <li><img src="images/seat-green.png" alt="" /></li>
+                  <li>40</li>
+                  <li>Seats left</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Route departure destination -->
+            <div class="bg-[#F7F8F8] p-7 flex justify-between mt-6 rounded-lg">
+              <div><h3>Route</h3></div>
+              <div class="font-bold"><h3>Dhaka-Sylhet</h3></div>
+            </div>
+            <div><img src="images/Line 1.png" alt="" /></div>
+            <div class="bg-[#F7F8F8] p-8 flex justify-between">
+              <div><h3>Departure Time</h3></div>
+              <div class="font-bold"><h3>9:00 PM</h3></div>
+            </div>
+            <div><img src="images/Line 1.png" alt="" /></div>
+            <div class="bg-[#F7F8F8] p-7 lg:flex text-center">
+              <button class="btn lg:text-xl mb-2">Boarding Point- Dhaka</button>
+              <button class="btn lg:text-xl mb-2">Droping Point- Sylhet</button>
+              <button class="btn lg:text-xl">Est. time 6 hours</button>
+            </div>
+          </div>
+          <!-- Verticle divider -->
+          <div class="w-1/12 hidden lg:block"><img src="images/info-devider.png" alt="" /></div>
+          <!-- price show column -->
+          <div
+            class="p-7 flex flex-col justify-center align-middle pr-6 lg:text-xl font-bold w-3/12 lg:w-2/12"
+          >
+            <ul>
+              <li><img src="images/fare.png" alt="" /></li>
+              <li>550 Taka</li>
+              <li>Per Seat</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Greenline Paribahan Lower part-->
       </section>
     </main>
     <footer></footer>
