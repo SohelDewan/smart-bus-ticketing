@@ -9,3 +9,27 @@
 .rect-yellow{
     background: #FFBF0F;
 }
+#available, #selected{
+  display: flex;
+  gap: 6px;
+}
+.discount-coupon{
+  display: flex;
+}
+.discount-coupon .btn-mycustom{
+  background: #1DD100;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, .2 );
+  display: inline;
+}
+.discount-coupon input{
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}

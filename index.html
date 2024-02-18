@@ -69,7 +69,7 @@
           class="hero min-h-screen rounded-3xl overflow-hidden"
           style="background-image: url(images/banner.png)"
         >
-        <!-- Banner part start -->
+          <!-- Banner part start -->
           <div class="hero-overlay bg-opacity-10"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -156,7 +156,9 @@
                 </div>
               </div>
               <div class="bg-green-100 p-2 rounded-xl">
-                <ul class="flex flex-col lg:flex-row lg:gap-2 text-[#1DD100] lg:text-xl font-bold">
+                <ul
+                  class="flex flex-col lg:flex-row lg:gap-2 text-[#1DD100] lg:text-xl font-bold"
+                >
                   <li><img src="images/seat-green.png" alt="" /></li>
                   <li>40</li>
                   <li>Seats left</li>
@@ -181,7 +183,9 @@
             </div>
           </div>
           <!-- Verticle divider -->
-          <div class="w-1/12 hidden lg:block"><img src="images/info-devider.png" alt="" /></div>
+          <div class="w-1/12 hidden lg:block">
+            <img src="images/info-devider.png" alt="" />
+          </div>
           <!-- price show column -->
           <div
             class="p-7 flex flex-col justify-center align-middle pr-6 lg:text-xl font-bold w-3/12 lg:w-2/12"
@@ -194,6 +198,102 @@
           </div>
         </div>
         <!-- Greenline Paribahan Lower part-->
+        <div class="bg-white lg:flex p-4 mt-5 rounded-xl text-gray-400">
+          <!-- Select Your Seat -->
+          <div class="lg:w-7/12">
+            <h3 class="text-xl">Select Your Seat</h3>
+            <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
+            <div class="flex justify-between lg:mr-6">
+              <div id="available">
+                <img src="images/seat-gray.png" /><span>Available</span>
+              </div>
+              <div id="selected">
+                <img src="images/seat-gray.png" /><span>Selected</span>
+              </div>
+            </div>
+            <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
+            <div class="flex justify-end">
+              <button class="btn px-6 lg:mr-6">
+                <img src="images/wheel.png" alt="" />
+              </button>
+            </div>
+            <!-- seat plan and button -->
+            <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
+              <h3 class=" lg:text-3xl p-1 font-bold">A</h3>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">A1</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">A2</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">A3</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">A4</button>
+            </div>
+            <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
+              <h3 class=" lg:text-3xl p-1 font-bold">B</h3>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">B1</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">B2</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">B3</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">B4</button>
+            </div>
+            <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
+              <h3 class=" lg:text-3xl p-1 font-bold">C</h3>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">C1</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">C2</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">C3</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">C4</button>
+            </div>
+            <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
+              <h3 class=" lg:text-3xl p-1 font-bold">D</h3>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">D1</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">D2</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">D3</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">D4</button>
+            </div>
+            <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
+              <h3 class=" lg:text-3xl p-1 font-bold">E</h3>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">E1</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">E2</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">E3</button>
+              <button class="btn seat-btn lg:text-2xl lg:px-8">E4</button>
+            </div>
+          </div>
+          <!-- divider -->
+          <div class="w-1/24 px-2 hidden lg:block"><img src="images/Line 2.png" alt="" /></div>
+          <!-- Select Your Seat right -->
+          <div class=" lg:w-4/12 p-2">
+            <h3 class="text-xl">Select Your Seat</h3>
+            <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
+            <!-- div for dynamic calculation -->
+            <div class="p-2 bg-[#F7F8F8] rounded-xl">
+                <ul class="flex justify-between">
+                  <li>Seat <span>2</span></li>
+                  <li>Class</li>
+                  <li>Price</li>
+                </ul>
+              <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
+                <ul class="flex justify-between">
+                  <li>C2</li>
+                  <li>Economoy</li>
+                  <li>550</li>
+                </ul>
+                <ul class="flex justify-between">
+                  <li>C2</li>
+                  <li>Economoy</li>
+                  <li>550</li>
+                </ul>
+                <img class="mt-4" src="images/Line 6.png" alt="">
+                <div id="total-cost" class="flex justify-between mt-4">
+                  <h3>Total Price</h3>
+                  <p>BDT <span>1100</span></p>
+                </div>
+                <div id="apply-coupon" class="mt-4 discount-coupon">
+                  <input type="text" name="" id="" placeholder="Have any copupon?">
+                  <button class="btn-mycustom">Apply</button>
+                </div>
+                <div id="grand-cost" class="flex justify-between mt-4">
+                  <h3>Grand Total</h3>
+                  <p>BDT <span>1100</span></p>
+                </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
