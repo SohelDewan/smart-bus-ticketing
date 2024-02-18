@@ -14,54 +14,123 @@
   </head>
   <body>
     <header class="mx-auto container">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-2xl font-extrabold">Dur-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn  border-green-500"><span class="text-[#1DD100]">Bus</span> <img src="images/bus-icon.png" alt=""></a>
-                </div>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </nav>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl font-extrabold">Dur-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn border-green-500"
+              ><span class="text-[#1DD100]">Bus</span>
+              <img src="images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="mx-auto container">
-            <div class="hero min-h-screen rounded-3xl overflow-hidden" style="background-image: url(images/banner.png);">
-                <div class="hero-overlay bg-opacity-10"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with</h1>
-                    <h2 class="mb-5 text-[#1DD100] text-3xl font-bold">Dur Paribahan </h2>
-                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] border-0 font-bold ">Buy Tickets</button>
-                  </div>
-                </div>
-              </div>
-        </section>
+      <section class="mx-auto container">
+        <div
+          class="hero min-h-screen rounded-3xl overflow-hidden"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-10"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with</h1>
+              <h2 class="mb-5 text-[#1DD100] text-3xl font-bold">
+                Dur Paribahan
+              </h2>
+              <p>
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button class="btn bg-[#1DD100] border-0 font-bold">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best offer or Coupon part start -->
+      <section class="mx-auto container">
+        <h2 class="text-3xl font-bold my-16 text-center">
+          Best offers for you
+        </h2>
+        <div class="mx-auto container flex justify-center my-5 gap-5">
+          <div class="rect-pink rect-yellow p-8 flex justify-between">
+            <div>
+              <h3 class="text-5xl font-bold">15% OFF</h3>
+              <h4 class="text-2xl mt-3">on your next purchase</h4>
+              <p class="text-xl mt-3">use by January 2024</p>
+            </div>
+            <div class="-mt-8">
+              <img src="images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-2xl mt-10 pr-6 font-bold">NEW15</h4>
+              <p class="mt-3">Coupon Code</p>
+            </div>
+          </div>
+          <div class="rect-pink p-8 flex justify-between">
+            <div>
+              <h3 class="text-5xl font-bold">20% OFF</h3>
+              <h4 class="text-2xl mt-3">on your next purchase</h4>
+              <p class="text-xl mt-3">use by January 2024</p>
+            </div>
+            <div class="-mt-8">
+              <img src="images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-2xl mt-10 pr-6 font-bold">Couple 20</h4>
+              <p class="mt-3">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-6">
+          <button class="btn border-green-500 text-[#1DD100]">
+            See All Offers
+          </button>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="app.js"></script>
   </body>
 </html>
