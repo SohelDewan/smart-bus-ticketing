@@ -221,38 +221,38 @@
             <div class="text-gray-400">
               <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4 ">
                 <h3 class="lg:text-3xl p-1 font-bold">A</h3>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">A1</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">A2</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">A3</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">A4</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="A1">A1</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="A2">A2</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="A3">A3</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="A4">A4</button>
               </div>
               <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
                 <h3 class="lg:text-3xl p-1 font-bold">B</h3>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">B1</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">B2</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">B3</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">B4</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="B1">B1</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="B2">B2</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="B3">B3</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="B4">B4</button>
               </div>
               <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
                 <h3 class="lg:text-3xl p-1 font-bold">C</h3>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">C1</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">C2</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">C3</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">C4</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="C1">C1</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="C2">C2</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="C3">C3</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="C4">C4</button>
               </div>
               <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
                 <h3 class="lg:text-3xl p-1 font-bold">D</h3>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">D1</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">D2</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">D3</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">D4</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="D1">D1</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="D2">D2</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="D3">D3</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="D4">D4</button>
               </div>
               <div class="flex justify-between lg:py-2 lg:px-8 mt-2 lg:mt-4">
                 <h3 class="lg:text-3xl p-1 font-bold">E</h3>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">E1</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">E2</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">E3</button>
-                <button class="btn seat-btn lg:text-2xl lg:px-8">E4</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="E1">E1</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="E2">E2</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="E3">E3</button>
+                <button class="btn seat-btn lg:text-2xl lg:px-8" id="E4">E4</button>
               </div>
             </div>
           </div>
@@ -301,22 +301,26 @@
             </div>
             <!-- form part -->
             <form>
-              <label for="passenger name" aria-required="true"
+              <label for="Passenger Name" aria-required="true"
                 >Passenger Name*</label
               >
-              <input type="text" name="" id="" placeholder="Enter your name" />
+              <input type="text" name="" id="name" placeholder="Enter your name" />
 
-              <label for="Phone Number" aria-required="true"
+              <label for="Phone Number" aria-required="true" id="Phone-number">Phone Number</label>
                 >Phone Number*</label
               >
-              <input type="number" name="" id="" placeholder="Enter your phone number" />
+              <input type="number" name="" id="number" placeholder="Enter your phone number" />
 
               <label for="Email ID" required
                 >Email ID</label
               >
-              <input type="email" name="" id="" placeholder="Enter your email id" />
+              <input type="email" name="" id="email" placeholder="Enter your email id" />
 
-              <button class="submit-btn" type="submit">Next</button>
+              <button id="next-btn" class="submit-btn" type="submit">Next</button>
+              <!-- Modal will be shown on button click -->
+              <div id="modal" class="hidden">
+                <img src="images/Success Modal.png" alt="">
+              </div>
             </form>
             <!-- terms and condition -->
             <div class="flex gap-4 mt-5 underline text-[#0307128b]">

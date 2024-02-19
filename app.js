@@ -4,7 +4,7 @@ const allBtn = document.getElementsByClassName("seat-btn");
 let count = 0;
 let seatLeft = 40;
 for (let btn of allBtn) {
-  console.log(btn);
+//   console.log(btn);
   btn.addEventListener("click", (e) => {
     count = count + 1;
     seatLeft = seatLeft - 1;
@@ -43,4 +43,17 @@ for (let btn of allBtn) {
 
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
+}
+
+function setBackgroundColor(e) {
+    const element = document.getElementById(e);
+    element.classList.toggle("bg-green-400");
+}
+
+document.getElementById("next-btn").addEventListener('click', (e) => {
+    removeElement('modal');
+})
+function removeElement(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove("hidden");
 }
