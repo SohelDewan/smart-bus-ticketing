@@ -82,7 +82,7 @@
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button class="btn bg-[#1DD100] border-0 font-bold">
+              <button id="buy-ticket" class="btn bg-[#1DD100] border-0 font-bold">
                 Buy Tickets
               </button>
             </div>
@@ -160,7 +160,7 @@
                   class="flex flex-col lg:flex-row lg:gap-2 text-[#1DD100] lg:text-xl font-bold"
                 >
                   <li><img src="images/seat-green.png" alt="" /></li>
-                  <li>40</li>
+                  <li id="seat-left">40</li>
                   <li>Seats left</li>
                 </ul>
               </div>
@@ -199,7 +199,7 @@
         </div>
         <!-- Greenline Paribahan Lower part-->
         <div class="bg-white lg:flex p-4 mt-5 rounded-xl">
-          <!-- Select Your Seat -->
+          <!-- Select Your Seat left -->
           <div class="lg:w-7/12">
             <h3 class="text-xl">Select Your Seat</h3>
             <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
@@ -260,14 +260,14 @@
           <div class="w-1/24 px-2 hidden lg:block">
             <img src="images/Line 2.png" alt="" />
           </div>
-          <!-- Select Your Seat right -->
+          <!-- Select Your Seat right-side -->
           <div class="lg:w-4/12 p-2">
             <h3 class="text-xl">Select Your Seat</h3>
             <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
             <!-- div for dynamic calculation -->
             <div class="p-2 bg-[#F7F8F8] rounded-xl">
               <ul class="flex justify-between">
-                <li>Seat <span>2</span></li>
+                <li>Seat <span id="seat-count" class="bg-[#1DD100] text-white rounded-full px-3">2</span></li>
                 <li>Class</li>
                 <li>Price</li>
               </ul>
@@ -313,7 +313,7 @@
               >
               <input type="number" name="" id="" placeholder="Enter your phone number" />
 
-              <label for="Email ID" aria-required="true"
+              <label for="Email ID" required
                 >Email ID</label
               >
               <input type="email" name="" id="" placeholder="Enter your email id" />
@@ -338,19 +338,21 @@
         </div>
         <div>
           <h3 class="text-white text-xl mb-4">Download our app</h3>
-          <img src="images/Group 104.png" alt="">
+          <img class="cursor-pointer" src="images/Group 104.png" alt="">
         </div>
       </div>
       <div class=" text-center pb-8 mx-auto container"><img src="images/Line footer.png"></div>
       <div class="text-gray-300 flex justify-evenly pb-5">
         <p>@all rights reserved, Dur-Ticket services limited.2024</p>
-        <div class="text-white flex justify-between gap-3">
+        <div class="text-white flex justify-between gap-5">
           <a href="#">Terms & condition</a>
           <a href="#">Return & refund policy</a>
           <a href="#">Privacy policy</a>
         </div>
       </div>
     </footer>
+
+    
     <script src="app.js"></script>
   </body>
 </html>
