@@ -12,8 +12,12 @@ for (let btn of allBtn) {
     setInnerText("seat-count", count);
     // document.getElementById('seat-left').innerText = seatLeft;
     setInnerText("seat-left", seatLeft);
-    console.log(e.target.parentNode.childNodes[3].innerText);
-    const btnName = e.target.parentNode.childNodes[3].innerText;
+    console.log(e.target.innerText);
+    const btnLength = e.target.parentNode.childNodes.length;
+    if(btnLength > 4) {    
+        e.target.setAttribute('disabled', true);
+    }
+    const btnName = e.target.innerText;
     const price = 550;
     const ticketClass = 'Economy';
     const selectedContainer = document.getElementById('selected-place-container');
@@ -28,6 +32,8 @@ for (let btn of allBtn) {
     li.appendChild(p2);
     li.appendChild(p3);
     selectedContainer.append(li);
+    e.target.style.backgroundColor = "#1DD100";
+    e.target.style.color = "#fff";
     const totalPrice = document.getElementById('total-cost').innerText;
     // document.getElementById('total-cost').innerHTML = convertedPrice + parseInt(price);
     const convertedPrice = parseInt(totalPrice);
@@ -37,7 +43,6 @@ for (let btn of allBtn) {
      const convertedGrandTotalCost = parseInt(grandTotalCost);
      const sum2 = convertedGrandTotalCost + price;
      setInnerText("grand-total", sum2);
-
   });
 }
 
