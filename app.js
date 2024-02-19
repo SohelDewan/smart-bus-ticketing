@@ -6,6 +6,10 @@ let seatLeft = 40;
 for (let btn of allBtn) {
 //   console.log(btn);
   btn.addEventListener("click", (e) => {
+    const btnLength = e.target.parentNode.childNodes.length;
+    if(btnLength > 4) {    
+        e.target.setAttribute('disabled', true);
+    }
     count = count + 1;
     seatLeft = seatLeft - 1;
     // document.getElementById('seat-count').innerText = count;
@@ -13,10 +17,6 @@ for (let btn of allBtn) {
     // document.getElementById('seat-left').innerText = seatLeft;
     setInnerText("seat-left", seatLeft);
     console.log(e.target.innerText);
-    const btnLength = e.target.parentNode.childNodes.length;
-    if(btnLength > 4) {    
-        e.target.setAttribute('disabled', true);
-    }
     const btnName = e.target.innerText;
     const price = 550;
     const ticketClass = 'Economy';
