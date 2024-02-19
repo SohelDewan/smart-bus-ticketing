@@ -267,25 +267,23 @@
             <!-- div for dynamic calculation -->
             <div class="p-2 bg-[#F7F8F8] rounded-xl">
               <ul class="flex justify-between">
-                <li>Seat <span id="seat-count" class="bg-[#1DD100] text-white rounded-full px-3">2</span></li>
+                <li>Seat <span id="seat-count" class="bg-[#1DD100] text-white rounded-full px-3">0</span></li>
                 <li>Class</li>
                 <li>Price</li>
               </ul>
               <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
-              <ul class="flex justify-between">
+              <ul id="selected-place-container" class="selected-place-container">
+
+              </ul>
+              <!-- <ul class="flex justify-between">
                 <li>C2</li>
                 <li>Economoy</li>
                 <li>550</li>
-              </ul>
-              <ul class="flex justify-between">
-                <li>C2</li>
-                <li>Economoy</li>
-                <li>550</li>
-              </ul>
+              </ul> -->
               <img class="mt-4" src="images/Line 6.png" alt="" />
-              <div id="total-cost" class="flex justify-between mt-4">
+              <div class="flex justify-between mt-4">
                 <h3>Total Price</h3>
-                <p>BDT <span>1100</span></p>
+                <p>BDT <span id="total-cost">00</span></p>
               </div>
               <div id="apply-coupon" class="mt-4 discount-coupon">
                 <input
@@ -296,9 +294,9 @@
                 />
                 <button class="btn-mycustom">Apply</button>
               </div>
-              <div id="grand-cost" class="flex justify-between mt-4">
+              <div class="flex justify-between mt-4">
                 <h3>Grand Total</h3>
-                <p>BDT <span>1100</span></p>
+                <p>BDT <span id="grand-total">00</span></p>
               </div>
             </div>
             <!-- form part -->

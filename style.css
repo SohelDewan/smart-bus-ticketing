@@ -40,6 +40,12 @@
   border-radius: 10px;
   outline: none;
 }
+.selected-place-container li{
+  display: flex;
+  /* flex-direction: row; */
+  gap: 60px;
+  padding-left: 30px;
+}
 form{
   margin-top: 20px;
 }
