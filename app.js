@@ -6,9 +6,14 @@ let seatLeft = 40;
 for (let btn of allBtn) {
 //   console.log(btn);
   btn.addEventListener("click", (e) => {
-    const btnLength = e.target.parentNode.childNodes.length;
-    if(btnLength > 4) {    
-        e.target.setAttribute('disabled', true);
+    // const btnLength = e.target.parentNode.childNodes.length;
+    const maxSeat = 4;
+    let selectedSeat = 0;
+    if(selectedSeat <= maxSeat) {    
+        btn.classList.toggle("selected");
+        selectedSeat = selectedSeat + btn.classList.contains("selected");
+    }else{
+        btn.classList.remove("selected");
     }
     count = count + 1;
     seatLeft = seatLeft - 1;
