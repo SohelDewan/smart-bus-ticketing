@@ -62,16 +62,20 @@ function updateGrandTotal(status){
             // const discounted = totalCost * 0.2;
             // console.log(discounted);
             document.getElementById('grand-total').innerText = totalCost * 0.85;
+            document.querySelector('.discount-coupon').classList.add('hidden');
         }else if (couponCode == "Couple 20") {
             // const discounted = totalCost * 0.2;
             // console.log(discounted);
             document.getElementById('grand-total').innerText = totalCost * 0.80;
+            document.querySelector('.discount-coupon').classList.add('hidden');
         }
         else{
             alert("Please enter coupon code that is valid");
         }
     }
 }
+
+
 
 function updateTotalCost(value){
     // console.log(value);
