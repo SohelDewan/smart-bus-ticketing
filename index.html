@@ -207,8 +207,9 @@
               <div id="available">
                 <img src="images/seat-gray.png" /><span>Available</span>
               </div>
-              <div id="selected">
-                <img src="images/seat-gray.png" /><span>Selected</span>
+              <div>
+                 <!-- <div id="img-selected"><img class="hidden" src="images/seat-green-filled.png" /><span>Selected</span></div> -->
+                <div id="unselected"><img src="images/seat-gray.png" /><span>Selected</span></div>
               </div>
             </div>
             <div class="my-4"><img src="images/Line 1.png" alt="" /></div>
@@ -315,14 +316,13 @@
                 <h3>Total Price</h3>
                 <p>BDT <span id="total-cost">00</span></p>
               </div>
-              <div id="apply-coupon" class="mt-4 discount-coupon">
-                <input
+              <div class="mt-4 discount-coupon">
+                  <input
                   type="text"
-                  name=""
-                  id="any-coupon"
+                  id="coupon-code"
                   placeholder="Have any copupon?"
                 />
-                <button class="btn-mycustom">Apply</button>
+                <button id="apply-coupon" onclick="updateGrandTotal('apply-btn')" class="btn-mycustom apply-btn">Apply</button>
               </div>
               <div class="flex justify-between mt-4">
                 <h3>Grand Total</h3>
@@ -334,15 +334,15 @@
               <label for="Passenger Name" aria-required="true"
                 >Passenger Name*</label
               >
-              <input type="text" name="" id="name" placeholder="Enter your name" />
+              <input required type="text" name="" id="name" placeholder="Enter your name" />
 
-              <label for="Phone Number" aria-required="true" id="Phone-number">Phone Number</label>
-              <input type="number" name="" id="number" placeholder="Enter your phone number" />
+              <label for="Phone Number" aria-required="true" id="Phone-number">Phone Number*</label>
+              <input required type="number" name="" id="number" placeholder="Enter your phone number" />
 
-              <label for="Email ID" required
-                >Email ID</label
+              <label for="Email ID" area-required="true" id="Email"
+                >Email ID*</label
               >
-              <input type="email" name="" id="email" placeholder="Enter your email id" />
+              <input required type="email" name="" id="email" placeholder="Enter your email id" />
 
               <button id="next-btn" class="submit-btn" type="submit">Next</button>
               <!-- Modal will be shown on button click -->
@@ -382,6 +382,7 @@
       </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="test.js"></script>
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>

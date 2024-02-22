@@ -7,14 +7,6 @@ for (let btn of allBtn) {
 //   console.log(btn);
   btn.addEventListener("click", (e) => {
     // const btnLength = e.target.parentNode.childNodes.length;
-    const maxSeat = 4;
-    let selectedSeat = 0;
-    if(selectedSeat <= maxSeat) {    
-        btn.classList.toggle("selected");
-        selectedSeat = selectedSeat + btn.classList.contains("selected");
-    }else{
-        btn.classList.remove("selected");
-    }
     count = count + 1;
     seatLeft = seatLeft - 1;
     // document.getElementById('seat-count').innerText = count;
@@ -48,6 +40,7 @@ for (let btn of allBtn) {
      const convertedGrandTotalCost = parseInt(grandTotalCost);
      const sum2 = convertedGrandTotalCost + price;
      setInnerText("grand-total", sum2);
+    
   });
 }
 
@@ -66,4 +59,8 @@ document.getElementById("next-btn").addEventListener('click', (e) => {
 function removeElement(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove("hidden");
+}
+function addElement(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add("hidden");
 }
